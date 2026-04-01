@@ -3,6 +3,8 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import ExchangeRatesScreen from "../screens/ExchangeRatesScreen";
 import { RootStackParamList } from "../types/navigation";
 import { theme } from "../styles/theme";
+import CurrencyConverterScreen from "../screens/CurrencyConverterScreen";
+import { SCREENS } from "../constants/navigation";
  
 const Tab = createBottomTabNavigator<RootStackParamList>();
 
@@ -23,7 +25,8 @@ export function RootNavigator() {
         },
       }}
     >            
-      <Tab.Screen name={'ExchangeRatesScreen'} component={ExchangeRatesScreen} options={{ title: "Exchange Rates Screen" }} />
+      <Tab.Screen name={SCREENS.ExchangeRatesScreen} component={ExchangeRatesScreen} options={{ title: "Exchange Rate" }} />
+      <Tab.Screen name={SCREENS.CurrencyConverterScreen} component={CurrencyConverterScreen} options={{ title: "Converter" }} />
     </Tab.Navigator>
   );
 }
