@@ -1,3 +1,8 @@
+## App Screens
+<img width="925" height="898" alt="image" src="https://github.com/user-attachments/assets/875704f5-ca92-46fc-a942-c72cbb121cf3" />
+<img width="992" height="912" alt="image" src="https://github.com/user-attachments/assets/3c151d09-4ca8-4427-a352-6994b7f0b317" />
+
+
 ## Recommended Node Version:
 
 - 20.19.5
