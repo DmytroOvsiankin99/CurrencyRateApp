@@ -10,8 +10,7 @@ export function RootNavigator() {
   return (
     <Tab.Navigator
       screenOptions={{ 
-        headerStyle: { backgroundColor: theme.colors.bg, alignItems: 'center' },
-        headerTintColor: theme.colors.text,
+        headerShown: false,
         tabBarStyle: { 
           backgroundColor: theme.colors.bg, 
           borderTopColor: "rgba(255,255,255,0.10)",
