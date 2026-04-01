@@ -1,6 +1,6 @@
 ## Recommended Node Version:
 
--20.19.5
+- 20.19.5
 
 ## Running the app
 

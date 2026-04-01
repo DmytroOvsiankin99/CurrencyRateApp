@@ -1,8 +1,11 @@
 import React from "react";
-import { Text } from "react-native";
+import { Text, View } from "react-native";
 
 const ExchangeRatesScreen = () =>{
-  return <Text>Alive</Text>
+  return (<View>
+    <Text>ExchangeRatesScreen</Text>
+
+  </View>);
 }
 
 export default ExchangeRatesScreen;

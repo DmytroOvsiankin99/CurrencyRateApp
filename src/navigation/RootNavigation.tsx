@@ -2,6 +2,7 @@ import React from "react";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import ExchangeRatesScreen from "../screens/ExchangeRatesScreen";
 import { RootStackParamList } from "../types/navigation";
+import { theme } from "../styles/theme";
  
 const Tab = createBottomTabNavigator<RootStackParamList>();
 
@@ -9,14 +10,14 @@ export function RootNavigator() {
   return (
     <Tab.Navigator
       screenOptions={{ 
-        headerStyle: { backgroundColor: "#0B1220" },
-        headerTintColor: "#EAF0FF",
+        headerStyle: { backgroundColor: theme.colors.bg, alignItems: 'center' },
+        headerTintColor: theme.colors.text,
         tabBarStyle: { 
-          backgroundColor: "#0B1220", 
+          backgroundColor: theme.colors.bg, 
           borderTopColor: "rgba(255,255,255,0.10)",
         },
-        tabBarActiveTintColor: "#7AA7FF",
-        tabBarInactiveTintColor: "#AFC0E8",
+        tabBarActiveTintColor: theme.colors.primary,
+        tabBarInactiveTintColor: theme.colors.textMuted,
         tabBarIcon: () => null, 
         tabBarLabelStyle: {
           fontSize: 14,
